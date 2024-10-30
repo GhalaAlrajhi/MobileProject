@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/classes_logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Log In"
+        android:textColor="#395185"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/email_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/password_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="serif"
+        android:text="Forgot Password?"
+        android:textColor="#395185"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+
+    <Button
+        android:id="@+id/LogInBtn"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#1A4476"
+        android:onClick="loginMethod"
+        android:text="Login"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+
+    <TextView
+        android:id="@+id/NewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:onClick="registerPage"
+        android:text="Register with us!"
+        android:textColor="#395185"
+        android:textSize="19sp"
+        android:textStyle="bold|italic" />
+
+
+</LinearLayout>
